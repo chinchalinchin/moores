@@ -2,26 +2,26 @@ import { Routes } from '@angular/router';
 
 import { AboutComponent } from './pages/about/about.component';
 import { EstateComponent } from './pages/estate/estate.component';
-import { PreviewComponent } from './components/preview/preview.component';
 import { SplashComponent } from './pages/splash/splash.component';
+import { DisplayComponent } from './components/display/display.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 
-export const routes: Routes = [{
-    path: "",
-    component: SplashComponent,
-    title: "Moore Enterprises"
+export const routes: Routes     = [{
+    path                        : "",
+    component                   : SplashComponent,
 }, {
-    path: "estate",
-    component: EstateComponent,
-    title: "Estate Liquidation"
+    path                        : "estate",
+    component                   : EstateComponent,
 }, {
-    path: "estate/:item",
-    component: PreviewComponent,
-    title: "Estate Lot"
+    path                        : "estate/:item",
+    component                   : DisplayComponent,
 },{
-    path: "about",
-    component: AboutComponent,
-    title: "About Moore's"
+    path                        : "about",
+    component                   : AboutComponent,
+},{
+    path                        : "checkout",
+    component                   : CheckoutComponent
 }];
 
 export default routes

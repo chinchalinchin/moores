@@ -1,22 +1,29 @@
-import { Component } from '@angular/core';
-import { Img } from '../../models';
+import { 
+  Component 
+} from '@angular/core';
+
+import { 
+  Img 
+} from '../../models';
 
 interface Splash {
-  alignment               : String,
-  id                      : String,
-  h2                      : String,
-  p                       : String,
-  figcaption              : String,
-  img                     : Img
+  alignment                   : String,
+  id                          : String,
+  h2                          : String,
+  p                           : String,
+  figcaption                  : String,
+  img                         : Img
 }
 
 @Component({
-  selector                : 'app-splash',
-  imports                 : [],
-  templateUrl             : './splash.component.html',
-  styleUrl                : './splash.component.scss'
+  selector                    : 'app-splash',
+  imports                     : [],
+  templateUrl                 : './splash.component.html',
+  styleUrl                    : './splash.component.scss'
 })
 export class SplashComponent {
+  public h1 : String          = "William L. Moore"
+
   private splash : Splash[]   = [{
     alignment                 : "right",
     id                        : "splash-entrepreneur",
