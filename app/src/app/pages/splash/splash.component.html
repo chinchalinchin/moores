@@ -1,4 +1,28 @@
 <section>
-    here is where the card will go
-    <a href="/estate">test router</a>
+    <h1>William L. Moore</h1>
+
+    <div>
+        Description Goes Here
+    </div>
+
+
+    @for(splash of splashItems(); track splash.id) {
+        <h2>
+            {{splash.h2}}
+        </h2>
+
+        <div [id]="splash.id" class="aside">
+            <p [class]="splash.alignment == 'left' ? 'r-aside-content' : 'l-aside-content' ">
+                {{ splash.p }}
+            </p>
+    
+            <figure [class]="splash.alignment == 'right' ? 'r-aside' : 'l-aside'">
+                <img [src]="splash.img.src" [alt]="splash.img.alt">
+                <figcaption>
+                    {{ splash.figcaption }}
+                </figcaption>
+            </figure>
+        </div>
+    }
+
 </section>

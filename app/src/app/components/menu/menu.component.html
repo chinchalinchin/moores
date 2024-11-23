@@ -1,3 +1,5 @@
 <nav>
-    menu goes here
+    @for(item of menuItems(); track item.id) {
+        <a [id]="item.id" [href]="item.href">{{ item.content}}</a>
+    }
 </nav>
