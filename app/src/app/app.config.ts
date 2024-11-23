@@ -1,4 +1,3 @@
-import 'hammerjs'
 import { 
   ApplicationConfig, 
   importProvidersFrom, 
