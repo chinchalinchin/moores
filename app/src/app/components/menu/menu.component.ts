@@ -17,14 +17,14 @@ export class MenuComponent {
     id                      : "menu-home",
     content                 : "Home",
     href                    : "/"
-  }, {
-    id                      : "menu-about",
-    content                 : "About",
-    href                    : "/about"
-  }, {
+  },{
     id                      : "menu-estate",
     content                 : "Estate",
     href                    : "/estate"
+  },{
+    id                      : "menu-about",
+    content                 : "About",
+    href                    : "/about"
   }]
 
   public menuItems() : MenuItem[] {

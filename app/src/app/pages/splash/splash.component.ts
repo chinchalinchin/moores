@@ -7,8 +7,8 @@ import {
 } from '../../models';
 
 interface Splash {
-  alignment                   : String,
   id                          : String,
+  class                       : String,
   h2                          : String,
   p                           : String,
   figcaption                  : String,
@@ -22,11 +22,11 @@ interface Splash {
   styleUrl                    : './splash.component.scss'
 })
 export class SplashComponent {
-  public h1 : String          = "William L. Moore"
+  public h1 : String          = "William L. Moore, 1937 - 2023"
 
-  private splash : Splash[]   = [{
-    alignment                 : "right",
+  public splash : Splash[]    = [{
     id                        : "splash-entrepreneur",
+    class                     : "left",
     h2                        : "Entrepreneur",
     p                         : "content",
     figcaption                : "Moore's Upholstery",
@@ -35,8 +35,8 @@ export class SplashComponent {
       alt                     : "Small Business Owner"
     }
   },{
-    alignment                 : "left",
     id                        : "splash-artisan",
+    class                     : "right",
     h2                        : "Artisan",
     p                         : "content",
     figcaption                : "Seat Cover, YEAR",
@@ -45,8 +45,8 @@ export class SplashComponent {
       alt                     : "Award Winning Craftsmanship"
     }
   }, {
-    alignment                 : "right",
     id                        : "splash-pilot",
+    class                     : "left",
     h2                        : "Pilot",
     p                         : "content",
     figcaption                : "Cessna Aircraft, YEAR",
@@ -55,8 +55,4 @@ export class SplashComponent {
       alt                     : "Licensed Aircraft Pilot"
     }
   }]
-
-  public splashItems() : Splash[] {
-    return this.splash;
-  }
 }

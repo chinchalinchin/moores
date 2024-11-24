@@ -14,3 +14,27 @@ section div {
     margin-right            : 7.5%;
     margin-left             : 7.5%;
 }
+
+.splash {
+    display                 : grid;
+    grid-template-columns   : 1fr 1fr 1fr;
+    gap                     : 2.5%;
+}
+
+p.right{
+    grid-row                : 1;
+    grid-column             : 2 / 4;
+}
+figure.right{
+    grid-row                : 1;
+    grid-column             : 1;
+}
+
+p.left {
+    grid-row                : 1;
+    grid-column             : 1 / 3;
+}
+figure.left {
+    grid-row                : 1;
+    grid-column             : 3;
+}

@@ -8,4 +8,39 @@ nav {
 nav a {
     flex            : 1;
     text-align      : center;
+    text-decoration : none; 
+}
+
+//// HOVER ANIMATION
+/// Pre-Hover State 
+a span {
+    color           : grey;
+    display         : inline-block;
+    font-weight     : 300;
+    position        : relative;
+    transition      : 0.5s;
+}
+  
+a span:after {
+    color           : grey;
+    content         : '>>';
+    position        : absolute;
+    opacity         : 0;
+    top             : 0;
+    right           : -20px;
+    transition      : 0.5s;
+}
+
+/// Post-Hover State
+a:hover span {
+    color           : black;
+    font-weight     : 500;
+    padding-right   : 25px;
+}
+  
+a:hover span:after {
+    color           : black;
+    font-weight     : 500;
+    opacity         : 1;
+    right           : 0;
 }

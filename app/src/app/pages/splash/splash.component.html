@@ -1,25 +1,27 @@
 <section>
-    <h1>{{ h1 }}</h1>
+    <h1>
+        {{ h1 }}
+    </h1>
 
     <div>
         Description Goes Here
     </div>
 
 
-    @for(splash of splashItems(); track splash.id) {
+    @for(s of splash; track s.id) {
         <h2>
-            {{splash.h2}}
+            {{ s.h2 }}
         </h2>
 
-        <div [id]="splash.id" class="aside">
-            <p [class]="splash.alignment == 'left' ? 'r-aside-content' : 'l-aside-content' ">
-                {{ splash.p }}
+        <div [id]="s.id" class="splash">
+            <p [class]="s.class+' debug-black'" >
+                {{ s.p }}
             </p>
     
-            <figure [class]="splash.alignment == 'right' ? 'r-aside' : 'l-aside'">
-                <img [src]="splash.img.src" [alt]="splash.img.alt">
+            <figure [class]="s.class+' debug-red'">
+                <img [src]="s.img.src" [alt]="s.img.alt">
                 <figcaption>
-                    {{ splash.figcaption }}
+                    {{ s.figcaption }}
                 </figcaption>
             </figure>
         </div>

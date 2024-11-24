@@ -1,5 +1,10 @@
 <nav>
     @for(item of menuItems(); track item.id) {
-        <a [id]="item.id" [href]="item.href">{{ item.content}}</a>
+        <a [id]="item.id" [href]="item.href">
+            <span>
+                {{ item.content }}
+            </span>
+        </a>
     }
 </nav>
+<hr>

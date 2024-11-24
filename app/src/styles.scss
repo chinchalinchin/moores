@@ -1,4 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: antique;
+    src: url(/public/fonts/AntiqueNo14.ttf);
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.debug-black {
+    border-style    : solid;
+    border-radius   : 2px;
+    border-color    :black;
+}
+
+.debug-red {
+    border-style    : solid;
+    border-radius   : 2px;
+    border-color    : red;
+}
